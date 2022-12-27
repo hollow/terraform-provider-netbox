@@ -39,5 +39,3 @@ resource "netbox_device_role" "core_sw" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

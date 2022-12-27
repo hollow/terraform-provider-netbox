@@ -29,5 +29,3 @@ From the [official documentation](https://docs.netbox.dev/en/stable/features/dev
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

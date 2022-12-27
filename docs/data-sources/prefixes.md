@@ -3,7 +3,7 @@
 page_title: "netbox_prefixes Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_prefixes (Data Source)
@@ -45,5 +45,3 @@ Read-Only:
 - `vlan_id` (Number)
 - `vlan_vid` (Number)
 - `vrf_id` (Number)
-
-

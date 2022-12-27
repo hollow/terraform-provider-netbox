@@ -44,5 +44,3 @@ resource "netbox_asn" "test" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

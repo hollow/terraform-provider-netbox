@@ -3,7 +3,7 @@
 page_title: "netbox_cluster_type Data Source - terraform-provider-netbox"
 subcategory: "Virtualization"
 description: |-
-  
+
 ---
 
 # netbox_cluster_type (Data Source)
@@ -23,5 +23,3 @@ description: |-
 
 - `cluster_type_id` (Number)
 - `id` (String) The ID of this resource.
-
-

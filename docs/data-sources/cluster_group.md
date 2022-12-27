@@ -3,7 +3,7 @@
 page_title: "netbox_cluster_group Data Source - terraform-provider-netbox"
 subcategory: "Virtualization"
 description: |-
-  
+
 ---
 
 # netbox_cluster_group (Data Source)
@@ -29,5 +29,3 @@ data "netbox_cluster_group" "dc_west" {
 
 - `cluster_group_id` (Number)
 - `id` (String) The ID of this resource.
-
-

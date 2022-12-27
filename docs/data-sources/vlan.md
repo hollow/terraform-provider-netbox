@@ -3,7 +3,7 @@
 page_title: "netbox_vlan Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_vlan (Data Source)
@@ -48,5 +48,3 @@ data "netbox_vlan" "vlan3" {
 - `id` (String) The ID of this resource.
 - `site` (Number)
 - `status` (String)
-
-

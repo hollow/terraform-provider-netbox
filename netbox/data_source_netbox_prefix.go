@@ -114,7 +114,7 @@ func dataSourceNetboxPrefixRead(d *schema.ResourceData, m interface{}) error {
 		params.VlanVid = &vlanVid
 	}
 	if tag, ok := d.Get("tag").(string); ok && tag != "" {
-		params.Tag = &tag
+		params.Tag = []string{tag}
 	}
 	if tagn, ok := d.Get("tag__n").(string); ok && tagn != "" {
 		params.Tagn = &tagn

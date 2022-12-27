@@ -45,5 +45,3 @@ resource "netbox_device_type" "test" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

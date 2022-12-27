@@ -3,7 +3,7 @@
 page_title: "netbox_device_type Data Source - terraform-provider-netbox"
 subcategory: "Data Center Inventory Management (DCIM)"
 description: |-
-  
+
 ---
 
 # netbox_device_type (Data Source)
@@ -46,5 +46,3 @@ data "netbox_device_type" "ex3" {
 - `is_full_depth` (Boolean)
 - `manufacturer_id` (Number)
 - `u_height` (Number)
-
-

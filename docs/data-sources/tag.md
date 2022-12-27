@@ -3,7 +3,7 @@
 page_title: "netbox_tag Data Source - terraform-provider-netbox"
 subcategory: "Extras"
 description: |-
-  
+
 ---
 
 # netbox_tag (Data Source)
@@ -33,5 +33,3 @@ data "netbox_tag" "dmz" {
 
 - `id` (String) The ID of this resource.
 - `slug` (String)
-
-

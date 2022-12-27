@@ -36,5 +36,3 @@ Each location must have a name that is unique within its parent site and locatio
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

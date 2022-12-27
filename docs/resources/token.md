@@ -33,5 +33,3 @@ From the [official documentation](https://docs.netbox.dev/en/stable/rest-api/aut
 - `expires` (String)
 - `id` (String) The ID of this resource.
 - `last_used` (String)
-
-

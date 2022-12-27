@@ -36,5 +36,3 @@ resource "netbox_platform" "PANOS" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

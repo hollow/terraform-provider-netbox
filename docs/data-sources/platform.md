@@ -3,7 +3,7 @@
 page_title: "netbox_platform Data Source - terraform-provider-netbox"
 subcategory: "Data Center Inventory Management (DCIM)"
 description: |-
-  
+
 ---
 
 # netbox_platform (Data Source)
@@ -29,5 +29,3 @@ data "netbox_platform" "PANOS" {
 
 - `id` (String) The ID of this resource.
 - `slug` (String)
-
-

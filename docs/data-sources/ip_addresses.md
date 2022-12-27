@@ -3,7 +3,7 @@
 page_title: "netbox_ip_addresses Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_ip_addresses (Data Source)
@@ -58,5 +58,3 @@ Read-Only:
 - `id` (Number)
 - `name` (String)
 - `slug` (String)
-
-

@@ -3,7 +3,7 @@
 page_title: "netbox_cluster Data Source - terraform-provider-netbox"
 subcategory: "Virtualization"
 description: |-
-  
+
 ---
 
 # netbox_cluster (Data Source)
@@ -33,5 +33,3 @@ data "netbox_cluster" "vmw_cluster_01" {
 - `id` (String) The ID of this resource.
 - `site_id` (Number)
 - `tags` (Set of String)
-
-

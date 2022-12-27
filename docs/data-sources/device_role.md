@@ -3,7 +3,7 @@
 page_title: "netbox_device_role Data Source - terraform-provider-netbox"
 subcategory: "Data Center Inventory Management (DCIM)"
 description: |-
-  
+
 ---
 
 # netbox_device_role (Data Source)
@@ -31,5 +31,3 @@ data "netbox_device_role" "core_sw" {
 - `id` (String) The ID of this resource.
 - `slug` (String)
 - `tags` (Set of String)
-
-

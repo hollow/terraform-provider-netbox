@@ -3,7 +3,7 @@
 page_title: "netbox_available_prefix Resource - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_available_prefix (Resource)
@@ -49,5 +49,3 @@ resource "netbox_available_prefix" "test" {
 
 - `id` (String) The ID of this resource.
 - `prefix` (String)
-
-

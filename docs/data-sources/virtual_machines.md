@@ -3,7 +3,7 @@
 page_title: "netbox_virtual_machines Data Source - terraform-provider-netbox"
 subcategory: "Virtualization"
 description: |-
-  
+
 ---
 
 # netbox_virtual_machines (Data Source)
@@ -74,5 +74,3 @@ Read-Only:
 - `tenant_id` (Number)
 - `vcpus` (Number)
 - `vm_id` (Number)
-
-

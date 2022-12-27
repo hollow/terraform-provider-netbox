@@ -3,7 +3,7 @@
 page_title: "netbox_asns Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_asns (Data Source)
@@ -56,5 +56,3 @@ Read-Only:
 - `id` (Number)
 - `rir_id` (Number)
 - `tags` (Set of String)
-
-

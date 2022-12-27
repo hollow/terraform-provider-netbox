@@ -3,7 +3,7 @@
 page_title: "netbox_interfaces Data Source - terraform-provider-netbox"
 subcategory: "Virtualization"
 description: |-
-  
+
 ---
 
 # netbox_interfaces (Data Source)
@@ -78,5 +78,3 @@ Read-Only:
 - `id` (Number)
 - `name` (String)
 - `vid` (Number)
-
-

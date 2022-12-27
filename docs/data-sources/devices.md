@@ -3,7 +3,7 @@
 page_title: "netbox_devices Data Source - terraform-provider-netbox"
 subcategory: "Data Center Inventory Management (DCIM)"
 description: |-
-  
+
 ---
 
 # netbox_devices (Data Source)
@@ -55,5 +55,3 @@ Read-Only:
 - `site_id` (Number)
 - `status` (String)
 - `tenant_id` (Number)
-
-

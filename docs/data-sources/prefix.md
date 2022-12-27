@@ -3,7 +3,7 @@
 page_title: "netbox_prefix Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_prefix (Data Source)
@@ -33,5 +33,3 @@ for more information on available lookup expressions.
 - `id` (Number) The ID of this resource.
 - `status` (String)
 - `tags` (Set of String)
-
-

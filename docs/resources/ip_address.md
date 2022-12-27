@@ -62,5 +62,3 @@ resource "netbox_ip_address" "myvm_ip" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

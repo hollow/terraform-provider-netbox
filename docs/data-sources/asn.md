@@ -3,7 +3,7 @@
 page_title: "netbox_asn Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_asn (Data Source)
@@ -40,5 +40,3 @@ for more information on available lookup expressions.
 - `description` (String)
 - `id` (Number) The ID of this resource.
 - `tags` (Set of String)
-
-

@@ -3,7 +3,7 @@
 page_title: "netbox_region Data Source - terraform-provider-netbox"
 subcategory: "Data Center Inventory Management (DCIM)"
 description: |-
-  
+
 ---
 
 # netbox_region (Data Source)
@@ -38,5 +38,3 @@ Optional:
 Read-Only:
 
 - `id` (Number) The ID of this resource.
-
-

@@ -3,7 +3,7 @@
 page_title: "netbox_vrf Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_vrf (Data Source)
@@ -32,5 +32,3 @@ data "netbox_vrf" "cust_a_prod" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

@@ -1,3 +1,4 @@
+---
 # Visit https://goreleaser.com for documentation on how to customize this
 # behavior.
 before:
@@ -47,8 +48,6 @@ signs:
       - "${signature}"
       - "--detach-sign"
       - "${artifact}"
-release:
-  # If you want to manually examine the release before its live, uncomment this line:
-  # draft: true
+release: {}
 changelog:
   skip: true

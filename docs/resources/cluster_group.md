@@ -37,5 +37,3 @@ resource "netbox_cluster_group" "dc_west" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

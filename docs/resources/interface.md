@@ -62,5 +62,3 @@ resource "netbox_interface" "myvm_eth1" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

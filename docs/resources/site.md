@@ -56,5 +56,3 @@ resource "netbox_site" "example1" {
 ### Read-Only
 
 - `id` (String) The ID of this resource.
-
-

@@ -3,7 +3,7 @@
 page_title: "netbox_tenants Data Source - terraform-provider-netbox"
 subcategory: "Tenancy"
 description: |-
-  
+
 ---
 
 # netbox_tenants (Data Source)
@@ -68,5 +68,3 @@ Read-Only:
 - `name` (String)
 - `slug` (String)
 - `tenant_count` (Number)
-
-

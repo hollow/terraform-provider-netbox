@@ -3,7 +3,7 @@
 page_title: "netbox_site_group Data Source - terraform-provider-netbox"
 subcategory: "Data Center Inventory Management (DCIM)"
 description: |-
-  
+
 ---
 
 # netbox_site_group (Data Source)
@@ -35,5 +35,3 @@ data "netbox_site_group" "get_by_slug" {
 
 - `description` (String)
 - `id` (String) The ID of this resource.
-
-

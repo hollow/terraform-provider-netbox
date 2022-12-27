@@ -3,7 +3,7 @@
 page_title: "netbox_tenant_group Data Source - terraform-provider-netbox"
 subcategory: "Tenancy"
 description: |-
-  
+
 ---
 
 # netbox_tenant_group (Data Source)
@@ -25,5 +25,3 @@ description: |-
 - `id` (String) The ID of this resource.
 - `parent_id` (Number)
 - `slug` (String)
-
-

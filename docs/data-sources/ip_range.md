@@ -3,7 +3,7 @@
 page_title: "netbox_ip_range Data Source - terraform-provider-netbox"
 subcategory: "IP Address Management (IPAM)"
 description: |-
-  
+
 ---
 
 # netbox_ip_range (Data Source)
@@ -28,5 +28,3 @@ data "netbox_ip_range" "cust_a_prod" {
 ### Read-Only
 
 - `id` (Number) The ID of this resource.
-
-
