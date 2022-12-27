@@ -109,12 +109,11 @@ func resourceNetboxCircuitTerminationRead(d *schema.ResourceData, m interface{})
 	res, err := api.Circuits.CircuitsCircuitTerminationsRead(params, nil)
 
 	if err != nil {
-		if res, ok := err.(*circuits.CircuitsCircuitTerminationsReadDefault); ok {
-			if res.Code() == 404 {
-				// If the ID is updated to blank, this tells Terraform the resource no longer exists (maybe it was destroyed out of band). Just like the destroy callback, the Read function should gracefully handle this case. https://www.terraform.io/docs/extend/writing-custom-.html
-				d.SetId("")
-				return nil
-			}
+		errorcode := err.(*circuits.CircuitsCircuitTerminationsReadDefault).Code()
+		if errorcode == 404 {
+			// If the ID is updated to blank, this tells Terraform the resource no longer exists (maybe it was destroyed out of band). Just like the destroy callback, the Read function should gracefully handle this case. https://www.terraform.io/docs/extend/writing-custom-.html
+			d.SetId("")
+			return nil
 		}
 		return err
 	}
