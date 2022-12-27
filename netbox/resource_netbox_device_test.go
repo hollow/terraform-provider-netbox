@@ -136,9 +136,10 @@ func testAccCheckDeviceDestroy(s *terraform.State) error {
 		}
 
 		if err != nil {
-			errorcode := err.(*dcim.DcimDevicesReadDefault).Code()
-			if errorcode == 404 {
-				return nil
+			if res, ok := err.(*dcim.DcimDevicesReadDefault); ok {
+				if res.Code() == 404 {
+					return nil
+				}
 			}
 			return err
 		}

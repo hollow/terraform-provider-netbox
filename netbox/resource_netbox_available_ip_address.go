@@ -120,11 +120,12 @@ func resourceNetboxAvailableIPAddressRead(d *schema.ResourceData, m interface{})
 
 	res, err := api.Ipam.IpamIPAddressesRead(params, nil)
 	if err != nil {
-		errorcode := err.(*ipam.IpamIPAddressesReadDefault).Code()
-		if errorcode == 404 {
-			// If the ID is updated to blank, this tells Terraform the resource no longer exists (maybe it was destroyed out of band). Just like the destroy callback, the Read function should gracefully handle this case. https://www.terraform.io/docs/extend/writing-custom-providers.html
-			d.SetId("")
-			return nil
+		if res, ok := err.(*ipam.IpamIPAddressesReadDefault); ok {
+			if res.Code() == 404 {
+				// If the ID is updated to blank, this tells Terraform the resource no longer exists (maybe it was destroyed out of band). Just like the destroy callback, the Read function should gracefully handle this case. https://www.terraform.io/docs/extend/writing-custom-providers.html
+				d.SetId("")
+				return nil
+			}
 		}
 		return err
 	}

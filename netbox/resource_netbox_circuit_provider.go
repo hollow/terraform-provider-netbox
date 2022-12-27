@@ -80,11 +80,12 @@ func resourceNetboxCircuitProviderRead(d *schema.ResourceData, m interface{}) er
 	res, err := api.Circuits.CircuitsProvidersRead(params, nil)
 
 	if err != nil {
-		errorcode := err.(*circuits.CircuitsProvidersReadDefault).Code()
-		if errorcode == 404 {
-			// If the ID is updated to blank, this tells Terraform the resource no longer exists (maybe it was destroyed out of band). Just like the destroy callback, the Read function should gracefully handle this case. https://www.terraform.io/docs/extend/writing-custom-providers.html
-			d.SetId("")
-			return nil
+		if res, ok := err.(*circuits.CircuitsProvidersReadDefault); ok {
+			if res.Code() == 404 {
+				// If the ID is updated to blank, this tells Terraform the resource no longer exists (maybe it was destroyed out of band). Just like the destroy callback, the Read function should gracefully handle this case. https://www.terraform.io/docs/extend/writing-custom-providers.html
+				d.SetId("")
+				return nil
+			}
 		}
 		return err
 	}

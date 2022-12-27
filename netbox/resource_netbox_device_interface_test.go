@@ -232,9 +232,10 @@ func testAccCheckDeviceInterfaceDestroy(s *terraform.State) error {
 		}
 
 		if err != nil {
-			errorcode := err.(*dcim.DcimInterfacesReadDefault).Code()
-			if errorcode == 404 {
-				return nil
+			if res, ok := err.(*dcim.DcimInterfacesReadDefault); ok {
+				if res.Code() == 404 {
+					return nil
+				}
 			}
 			return err
 		}

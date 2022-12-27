@@ -211,9 +211,10 @@ func testAccCheckInterfaceDestroy(s *terraform.State) error {
 		}
 
 		if err != nil {
-			errorcode := err.(*virtualization.VirtualizationInterfacesReadDefault).Code()
-			if errorcode == 404 {
-				return nil
+			if res, ok := err.(*virtualization.VirtualizationInterfacesReadDefault); ok {
+				if res.Code() == 404 {
+					return nil
+				}
 			}
 			return err
 		}
