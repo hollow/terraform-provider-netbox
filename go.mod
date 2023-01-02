@@ -2,6 +2,8 @@ module github.com/e-breuninger/terraform-provider-netbox
 
 go 1.19
 
+replace github.com/fbreckle/go-netbox v0.0.0-20221221090244-bab5d518ea89 => github.com/hollow/go-netbox v0.0.0-20221227103226-33e900a8545e
+
 require (
 	github.com/fbreckle/go-netbox v0.0.0-20221221090244-bab5d518ea89
 	github.com/fbreckle/terraform-plugin-docs v0.0.0-20220812121758-a828466500d3
